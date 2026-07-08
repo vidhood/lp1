@@ -428,15 +428,18 @@ player.addEventListener("contextmenu", e => e.preventDefault());
 ========================= */
 
 
-(function() {
-    player.addEventListener("click", function () {
-        if (!window.popShown) {
-            window.popShown = true;
-            var s = document.createElement("script");
-            s.src = "https://pl30163906.effectivecpmnetwork.com/e6/41/85/e6418594117e23da3c9a358b7f975033.js";
-            document.body.appendChild(s);
-        }
-    });
+(function () {
+    var player = document.getElementById("id-player-anda"); // Pastikan variabel player sudah didefinisikan
+    if (player) {
+        player.addEventListener("click", function () {
+            if (!window.popShown) {
+                window.popShown = true;
+                var s = document.createElement("script");
+                s.src = "https://pl30163906.effectivecpmnetwork.com/e6/41/85/e6418594117e23da3c9a358b7f975033.js";
+                document.body.appendChild(s);
+            }
+        });
+    }
 })();
 
 </script>
